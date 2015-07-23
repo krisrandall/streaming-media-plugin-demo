@@ -2,7 +2,7 @@
 Really Simple Cordova Video Example
 This repo is a really simple example of the [Cordova Streaming Media Plugin](https://github.com/nchutchind/Streaming-Media-Cordova-Plugin)
 
-## Pre-requisites ##
+## Requirements ##
 * Cordova 
 
 ## Install Instructions ##
