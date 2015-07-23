@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <title>Video Player Example</title>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script>
+
+          function playVideo(videoUrl) {
+
+              // Play a video with callbacks
+              var options = {
+                successCallback: function() {
+                  console.log("Video was closed without error.");
+                },
+                errorCallback: function(errMsg) {
+                  console.log("Error! " + errMsg);
+                }
+              };
+              window.plugins.streamingMedia.playVideo(videoUrl, options);
+          
+          }
+
+        </script>
+
+    </head>
+
+
+    <body>
+
+        <h1>Video Player Example</h1>
+
+        Video URL: <input type="url" size="60" value="https://s3-ap-southeast-2.amazonaws.com/newnrg.d.video.ap-southeast-2-health2/virtual-sleep-welcome-video-1_424.mp4" id="vidUrl"/><br/>
+        <button type="button" onclick="playVideo(document.getElementById('vidUrl').value);">Play Video</button>
+        
+    </body>
+
+</html>
+
+
+
