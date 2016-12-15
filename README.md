@@ -6,7 +6,7 @@ This repo is a really simple example of the [Cordova Streaming Media Plugin (ver
 I use this simple demo for testing or making changes to the Streaming Media Plugin.
 
 ## Requirements ##
-* Cordova 
+Cordova 
 
 ## Install Instructions ##
 * `$ git clone https://github.com/krisrandall/Streaming-Media-Cordova-Plugin.git # get the plugin locally`
@@ -21,3 +21,6 @@ I use this simple demo for testing or making changes to the Streaming Media Plug
 * `$ rm -rf www/streaming-media-plugin-demo  # tidy up`
 * `$ cordova build`
 
+## Test change to local plugin ##
+
+`$ cordova plugin rm com.hutchind.cordova.plugins.streamingmedia; cordova plugin add ../Streaming-Media-Cordova-Plugin/; cordova build`
